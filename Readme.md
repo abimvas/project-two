@@ -15,8 +15,11 @@ What is the average graduation rate of each city/county?
 
 ## 5. Data sources or Data Sets to be Used:
 Income per county: http://www.txcip.org/tac/census/morecountyinfo.php?MORE=1013
+
 Texas city latitude and longitude data: https://www.gaslampmedia.com/download-zip-code-latitude-longitude-city-state-county-csv/
+
 SAT Score by District: https://tea.texas.gov/acctres/sat_act_index.html
+
 Disctrict Information: https://tea.texas.gov/acctres/completion/2016/level.html
 
 ## 6. Rough Breakdown of Tasks
