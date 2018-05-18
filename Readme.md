@@ -11,7 +11,7 @@ Determining the factors that have the largest impact on graduation rates in Texa
 Which factors seem to have higher correlation to high school graduation rates?
 Household income? SAT/ACT? Community type (e.g., rural, urban, suburban, etc.)
 
-What is the average graduation rate of each city.county?
+What is the average graduation rate of each city/county?
 
 ## 5. Data sources or Data Sets to be Used:
 Income per county: http://www.txcip.org/tac/census/morecountyinfo.php?MORE=1013
@@ -21,7 +21,9 @@ Disctrict Information: https://tea.texas.gov/acctres/completion/2016/level.html
 
 ## 6. Rough Breakdown of Tasks
 Collect and compile all data and put into a database (e.g., MySQL)
+
 Create visualizations (with Javascript, HTML/CSS, Leaflet, Plotly etc.) to illustrate different factors that may correlate with graduation rates
+
 Display the data through a dashboard page with multiple charts and create a Flask App
 
 
