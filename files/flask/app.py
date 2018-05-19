@@ -60,6 +60,7 @@ def data():
              "Graduation Rate": i['Graduation Rate'],
              "Income": i['Income']
              })
+
     
     print( data )
 
