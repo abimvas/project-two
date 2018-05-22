@@ -26,8 +26,10 @@ d3.json("/data", function (response) {
       return county.toLowerCase().indexOf(stuData.County.toLowerCase()) > -1
     })
 
+    // like append for objects
     item.properties = Object.assign(item.properties, matched[0])
 
+    // convert to int 
    if(item.properties.Income) {
     item.properties.Income = +item.properties.Income.replace(/(\$|,)/g, "")
    }
@@ -49,7 +51,7 @@ d3.json("/data", function (response) {
   // Creating a new choropleth layer
   geojson = L.choropleth(txdata, {
     // Which property in the features to use
-    valueProperty: "Income",
+    valueProperty: "Graduation Rate",
     // Color scale
     scale: ["#ffffb2", "#b10026"],
     // Number of breaks in step range
@@ -64,7 +66,7 @@ d3.json("/data", function (response) {
     },
     // Binding a pop-up to each layer
     onEachFeature: function (feature, layer) {
-      layer.bindPopup(feature.properties.County + " " + "<br>Average Household Income:<br>" +
+      layer.bindPopup("County: " + feature.properties.County + "<br>Graduation Rate(%): " + " " + "<br>Average Household Income:<br>" +
         "$" + feature.properties.Income);
     }
   }).addTo(map);
