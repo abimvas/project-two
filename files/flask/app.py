@@ -14,7 +14,7 @@ db_uri = os.getenv("DATABASE_URI", "sqlite:///project2.sqlite")
 engine = create_engine( db_uri )
 
 # read data from project 2 and save to sqlite
-gh = pd.read_csv('DataSets/graduation_by_income.csv')
+gh = pd.read_csv('DataSets/merged.csv')
 #income = pd.read_csv(" ")
 #community = pd.read_csv("DataSets/zip_codes_states.csv")
 #sat_act_district = pd.read_csv("DataSets/sat_act_district_data_class_2015.csv")
@@ -57,8 +57,9 @@ def data():
     for i in results:
         data.append({
              "County": i['County'],
-             "Graduation Rate": i['Graduation Rate'],
-             "Income": i['Income']
+             "Graduation": i['Graduation'],
+             "Income": i['Income'],
+             "SAT": i['SAT']
              })
 
     

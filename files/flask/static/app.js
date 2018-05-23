@@ -1,22 +1,24 @@
 // variables
 key = 'pk.eyJ1IjoiaGFnaW44MSIsImEiOiJjamhkYnI3OXMwOXhvM2NtbGRreWdpYnNlIn0.xa19EIY7LAkFsF8cmWm3lA';
 var gradData = [];
-var county, rate, income;
+var county, rate, income, SAT;
 
 // get data from API
 d3.json("/data", function (response) {
   // looping to get county rates and income from response json
+  console.log(response);
   for (var i in response) {
 
     data = response[i];
 
-    for (var a in data) {
+    // for (var a in data) {
 
-      county = data[a]['County'];
-      rate = data[a]['Graduation Rate'];
-      income = data[a]['Income'];
+      county = data['County'];
+      rate = data['Graduation'];
+      income = data['Income'];
+      SAT = data['SAT']
       // console.log( income );
-    }
+    // }
   }
 
 
@@ -29,10 +31,10 @@ d3.json("/data", function (response) {
     // like append for objects
     item.properties = Object.assign(item.properties, matched[0])
 
-    // convert to int 
-   if(item.properties.Income) {
-    item.properties.Income = +item.properties.Income.replace(/(\$|,)/g, "")
-   }
+  //   // convert to int 
+  //  if(item.properties.Income) {
+  //   item.properties.Income = +item.properties.Income.replace(/(\$|,)/g, "")
+  //  }
 
     return item
   })
@@ -51,7 +53,7 @@ d3.json("/data", function (response) {
   // Creating a new choropleth layer
   geojson = L.choropleth(txdata, {
     // Which property in the features to use
-    valueProperty: "Graduation Rate",
+    valueProperty: "Graduation",
     // Color scale
     scale: ["#ffffb2", "#b10026"],
     // Number of breaks in step range
@@ -66,8 +68,11 @@ d3.json("/data", function (response) {
     },
     // Binding a pop-up to each layer
     onEachFeature: function (feature, layer) {
-      layer.bindPopup("County: " + feature.properties.County + "<br>Graduation Rate(%): " + " " + "<br>Average Household Income:<br>" +
-        "$" + feature.properties.Income);
+      layer.bindPopup("County: " + feature.properties.County + 
+      "<br>Graduation Rate(%): " + feature.properties.Graduation + 
+      "<br>Average Household Income: " + feature.properties.Income +
+      "<br>Average SAT score: " + feature.properties.SAT
+    );
     }
   }).addTo(map);
 
