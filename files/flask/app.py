@@ -55,7 +55,12 @@ def data():
     results = conn.execute( query ).fetchall() 
     data = []
     for i in results:
-        data.append( { i['County']: { "Graduation Rate": i['Graduation Rate'], "Income": i['Income']} } )
+        data.append({
+             "County": i['County'],
+             "Graduation Rate": i['Graduation Rate'],
+             "Income": i['Income']
+             })
+
     
     print( data )
 
