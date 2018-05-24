@@ -33,8 +33,18 @@
             <div class="select">
               <!-- drop down to choose features we would like to display -->
             <span> CHOOSE A FEATURE: </span>
-            <select class="form-control">
-              <option>Graduation By Income</option>
+            <select class="form-control" id="choice">
+              <optgroup label="Choropleth">
+              <option value="ch_income">Income By County</option>
+              <option value="ch_grad">Graduation By County</option>
+              <option value="ch_sat">SAT Scores By County</option>
+              </optgroup>
+
+              <optgroup label="Bubble">
+              <option value="b_income">Income By County</option>
+              <option value="b_grad">Graduation By County</option>
+              <option value="b_sat">SAT Scores By County</option>
+              </optgroup>
             </select>
           </div>
           <!-- leaflet manipulates this div to add the map -->
