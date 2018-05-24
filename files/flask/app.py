@@ -58,7 +58,7 @@ def data():
         data.append({
              "County": i['County'],
              "Graduation": i['Graduation'],
-             "Income": i['Income'],
+             "Income": str(i['Income']).replace("$","").replace(",",""),
              "SAT": i['SAT']
              })
 
