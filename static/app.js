@@ -1,117 +1,136 @@
 // variables
 key = 'pk.eyJ1IjoiaGFnaW44MSIsImEiOiJjamhkYnI3OXMwOXhvM2NtbGRreWdpYnNlIn0.xa19EIY7LAkFsF8cmWm3lA';
-// county_geojson = 'https://data.texas.gov/resource/abaj-inw3.geojson';
-
-var map, county, rate, income, SAT;
-
-// format income as currency 
-function format_currency(n, currency) {
-    return currency + " " + n.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,");
-}
-
-// function to render map 
-function render_choropleth( option ) {
+var gradData, county, rate, income;
 
 // get data from API
-d3.json("/data", function (response) {
-  // looping to get county rates and income from response json
-  // console.log(response);
-  for (var i in response) {
+d3.json("/data", function(response) {  
 
-    data = response[i];
+gradData = response;
 
-    // for (var a in data) {
 
-      county = data['County'];
-      rate = data['Graduation'];
-      income = data['Income'];
-      SAT = data['SAT']
-      // console.log( income );
-    // }
+  function getColor(d) {
+    return d > 90000 ? '#800026' :
+        d > 80000  ? '#BD0026' :
+        d > 70000  ? '#E31A1C' :
+        d > 60000  ? '#FC4E2A' :
+        d > 50000  ? '#FD8D3C' :
+        d > 40000  ? '#FEB24C' :
+        d > 30000   ? '#FED976' :
+        d > 20000   ? '#D7FE4C' :
+              '#FFEDA0';
+  }
+
+    function style(feature) {
+      //console.log( feature.properties.COUNTY );
+    return {
+      weight: 2,
+      opacity: 1,
+      color: 'white',
+      dashArray: '3',
+      fillOpacity: 0.7,
+      fillColor: getColor( gradData[feature.properties.COUNTY.replace(" County","")]['Income'] )
+    };
+  }
+
+// initialize map
+var map = L.map('map').setView([ 31.968599, -99.901813], 6);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + key, {
+    id: 'mapbox.light', 
+    attribution: '',
+}).addTo(map);
+
+//L.geoJson(txdata).addTo(map);
+var geojson = L.geoJson(txdata, {  
+      style: style,
+      onEachFeature: onEachFeature
+  }).addTo(map);
+
+    var feature_readable_names = {'zipMean':'OON/Total Visits', 'provider_density':'Provider Density', 'population_density_sqmile':'Population Density / Sq Mile', 'mean_income':'Average Income'};  // this will need to be automated for product version
+
+  function onEachFeature(feature, layer) {  // use onEachFeature option to add event listeners to data layer
+      layer.on({
+          mouseover: highlightFeature,
+          mouseout: resetHighlight,
+          click: zoomToFeature
+      });
   }
 
 
-// loads form geojson
-  txdata.features.forEach(item => {
-    const county = item.properties.COUNTY;
-    const matched = response.filter(stuData => {
-      return county.toLowerCase().indexOf(stuData.County.toLowerCase()) > -1
-    })
+  function highlightFeature(e) {  // highlight area on mouseover event
+      var layer = e.target;
 
-    // like append for objects
-    item.properties = Object.assign(item.properties, matched[0])
+      layer.setStyle({
+          weight: 5,
+          color: '#666',
+          dashArray: '',
+          fillOpacity: 0.7,
+      });
 
-  //   // convert to int 
-  //  if(item.properties.Income) {
-  //   item.properties.Income = +item.properties.Income.replace(/(\$|,)/g, "")
-  //  }
+      if (!L.Browser.ie && !L.Browser.opera) {
+          layer.bringToFront();
+      }
 
-    return item
+      info.update(layer.feature.properties);
+  }
 
-  })
 
-  // console.log(txdata)
-  // initialize map
-  map = L.map('map').setView([31.968599, -99.901813], 6);
+  function resetHighlight(e) {  // reset style on mouseout event
+      geojson.resetStyle(e.target);
+      info.update();
+  }
 
-  
-  L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + key, {
-    id: 'mapbox.light',
-    attribution: '',
-  }).addTo(map);
-  // console.log(txdata)
-  L.geoJson(txdata).addTo(map);
 
-  // Creating a new choropleth layer
-  geojson = L.choropleth(txdata, {
-    // Which property in the features to use
-    valueProperty: option,
-    // Color scale
-    scale: ["#ffffb2", "#b10026"],
-    // Number of breaks in step range
-    steps: 10,
-    // q for quantile, e for equidistant, k for k-means
-    mode: "q",
-    style: {
-      // Border color
-      color: "#fff",
-      weight: 1,
-      fillOpacity: 0.8
-    },
+  function zoomToFeature(e) {  // zoom to feature on click event
+      map.fitBounds(e.target.getBounds());
+  }
 
-    // enables hover effect with display values on map
-    // Binding a pop-up to each layer
-    onEachFeature: function (feature, layer) {
-      layer.bindTooltip("County: " + feature.properties.County + 
-      "<br>Graduation Rate(%): " + feature.properties.Graduation + 
-      "<br>Average Household Income: " + format_currency( parseFloat(feature.properties.Income), "$" ) +
-      "<br>Average SAT score: " + feature.properties.SAT
-    );
+
+  // feature information box
+ // control that shows state info on hover
+  var info = L.control();
+
+  info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+  };
+
+  info.update = function (props) {
+    this._div.innerHTML = '<h4>Texas Income by County</h4>' +  (props ?
+      '<b>' + props.name + '</b><br />' + props.density + '<sup>2</sup>'
+      : 'Hover over a County');
+  };
+
+  info.addTo(map);
+
+var legend = L.control({position: 'bottomright'});
+
+  legend.onAdd = function (map) {
+
+    var div = L.DomUtil.create('div', 'info legend'),
+      grades = [ 20000, 30000, 40000, 50000, 60000, 70000, 80000, 90000 ],
+      labels = [],
+      from, to;
+
+    for (var i = 0; i < grades.length; i++) {
+      from = grades[i];
+      to = grades[i + 1];
+
+      labels.push(
+        '<i style="background:' + getColor(from + 1) + '"></i> ' +
+        from + (to ? '&ndash;' + to : '+'));
     }
-  }).addTo(map);
+
+    div.innerHTML = labels.join('<br>');
+    return div;
+  };
+
+  legend.addTo(map);
 
 });
-}
 
-// drop menu
-jQuery('#choice').change( function() {
-
-   // re-render map
-   map.remove();
-   
-
-   // when choice is made from drop down
-   var value = jQuery(this).val();
-   if ( value == 'ch_income') render_choropleth("Income");
-   if ( value == 'ch_grad') render_choropleth("Graduation");
-   if ( value == 'ch_sat') render_choropleth("SAT");
-})
-
-// default value 
-render_choropleth("Income");
-
-
-
+  
 
 
 
