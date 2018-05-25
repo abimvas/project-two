@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Compiled source #
 ###################
 *.com
@@ -26,6 +27,8 @@
 *.sql
 *.sqlite
 
+=======
+>>>>>>> 41c0616759b7ed1fd0211b00b953c8ea9779a6ce
 # OS generated files #
 ######################
 .DS_Store
