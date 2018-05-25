@@ -1,0 +1,31 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+/*style the body*/
+ body {
+    font-family: 'Times New Roman';
+    background: #f2f2f2;
+    margin-top: 10px !important;
+  }
+  
+  /*style the select box*/
+  .select { 
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    font-family: Georgia;
+    color: #3B3738;
+   }
+   /*to specify features of map*/
+  #map { 
+    height: 600px; 
+      -webkit-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
+      box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
+
+  }
+
+ 
