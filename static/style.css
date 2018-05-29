@@ -1,0 +1,48 @@
+/*style the body*/
+body {
+  font-family: 'Times New Roman';
+  background: #7f7ead;
+  margin-top: 10px !important;
+}
+
+/*style the select box*/
+.select { 
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  font-family: Georgia;
+  color: #3B3738;
+ }
+ /*to specify features of map*/
+#map { 
+  height: 600px; 
+    -webkit-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 9px 0px rgba(0,0,0,0.75);
+
+}
+
+/* info box */ 
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+h2 {
+color: rgb(53, 29, 56);
+font-weight: 800;
+font-size: 42px !important;
+}
+
+.dropdown {
+  color: rgb(13, 1, 14);
+  font-size: 17px
+}
