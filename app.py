@@ -30,6 +30,10 @@ def home():
 def income():
     return render_template("income_scatter.html")
 
+@app.route("/sat_income")
+def sat_income():
+    return render_template("sat_income.html")
+
 @app.route("/data")
 def data():
     # query data from the database return it as json
