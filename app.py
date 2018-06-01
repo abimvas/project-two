@@ -39,6 +39,10 @@ def income():
 def sat_income():
     return render_template("sat_income.html")
 
+@app.route("/sat_gr")
+def sat_gr():
+   return render_template('mattsindex.html')
+
 
 @app.route("/data")
 def data():
