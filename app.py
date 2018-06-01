@@ -26,6 +26,10 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/table")
+def table():
+    return render_template("Table.html")
+
 @app.route("/data")
 def data():
     # query data from the database return it as json
