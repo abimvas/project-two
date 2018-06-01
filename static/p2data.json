@@ -1,0 +1,1406 @@
+[
+{
+"County": "Anderson",
+"Graduation": 95.81428571,
+"Income": 43967,
+"SAT": 955.8571429
+},
+{
+"County": "Andrews",
+"Graduation": 95.45,
+"Income": 60644,
+"SAT": 977.0
+},
+{
+"County": "Angelina",
+"Graduation": 95.12142857,
+"Income": 43658,
+"SAT": 956.1428571
+},
+{
+"County": "Aransas",
+"Graduation": 87.75,
+"Income": 44866,
+"SAT": 946.0
+},
+{
+"County": "Archer",
+"Graduation": 99.26666667,
+"Income": 58928,
+"SAT": 1017.0
+},
+{
+"County": "Armstrong",
+"Graduation": 100.0,
+"Income": 54868,
+"SAT": 945.0
+},
+{
+"County": "Atascosa",
+"Graduation": 92.21,
+"Income": 53622,
+"SAT": 896.0
+},
+{
+"County": "Austin",
+"Graduation": 95.1,
+"Income": 55973,
+"SAT": 966.0
+},
+{
+"County": "Bailey",
+"Graduation": 98.8,
+"Income": 40536,
+"SAT": 980.0
+},
+{
+"County": "Bandera",
+"Graduation": 95.375,
+"Income": 55885,
+"SAT": 1035.0
+},
+{
+"County": "Bastrop",
+"Graduation": 93.65,
+"Income": 56449,
+"SAT": 929.0
+},
+{
+"County": "Baylor",
+"Graduation": 95.0,
+"Income": 36616,
+"SAT": 0.0
+},
+{
+"County": "Bee",
+"Graduation": 88.5,
+"Income": 40753,
+"SAT": 936.3333332999998
+},
+{
+"County": "Bell",
+"Graduation": 89.125,
+"Income": 51993,
+"SAT": 971.9090909
+},
+{
+"County": "Bexar",
+"Graduation": 88.3,
+"Income": 53170,
+"SAT": 889.0
+},
+{
+"County": "Blanco",
+"Graduation": 96.55,
+"Income": 57634,
+"SAT": 961.5
+},
+{
+"County": "Bosque",
+"Graduation": 94.60625,
+"Income": 47636,
+"SAT": 932.5
+},
+{
+"County": "Bowie",
+"Graduation": 95.68333333,
+"Income": 45455,
+"SAT": 1129.166667
+},
+{
+"County": "Brazoria",
+"Graduation": 94.66428571,
+"Income": 74510,
+"SAT": 968.5714286
+},
+{
+"County": "Brazos",
+"Graduation": 86.175,
+"Income": 42279,
+"SAT": 1009.0
+},
+{
+"County": "Brewster",
+"Graduation": 98.56666667,
+"Income": 43055,
+"SAT": 972.5
+},
+{
+"County": "Briscoe",
+"Graduation": 95.85,
+"Income": 43376,
+"SAT": 983.0
+},
+{
+"County": "Brooks",
+"Graduation": 86.45,
+"Income": 27703,
+"SAT": 0.0
+},
+{
+"County": "Brown",
+"Graduation": 98.58571429,
+"Income": 43770,
+"SAT": 990.1666667000002
+},
+{
+"County": "Burleson",
+"Graduation": 89.8,
+"Income": 48533,
+"SAT": 963.0
+},
+{
+"County": "Burnet",
+"Graduation": 93.35,
+"Income": 55919,
+"SAT": 954.0
+},
+{
+"County": "Caldwell",
+"Graduation": 89.98333333,
+"Income": 49598,
+"SAT": 891.3333332999998
+},
+{
+"County": "Calhoun",
+"Graduation": 92.55,
+"Income": 52916,
+"SAT": 995.0
+},
+{
+"County": "Callahan",
+"Graduation": 95.35,
+"Income": 45727,
+"SAT": 945.0
+},
+{
+"County": "Cameron",
+"Graduation": 93.075,
+"Income": 36587,
+"SAT": 903.6
+},
+{
+"County": "Camp",
+"Graduation": 97.5,
+"Income": 41937,
+"SAT": 911.0
+},
+{
+"County": "Carson",
+"Graduation": 99.35,
+"Income": 62573,
+"SAT": 0.0
+},
+{
+"County": "Cass",
+"Graduation": 97.24285714,
+"Income": 40597,
+"SAT": 1065.666667
+},
+{
+"County": "Castro",
+"Graduation": 97.23333333,
+"Income": 45229,
+"SAT": 1183.0
+},
+{
+"County": "Chambers",
+"Graduation": 98.25,
+"Income": 80279,
+"SAT": 947.3333332999998
+},
+{
+"County": "Cherokee",
+"Graduation": 92.34,
+"Income": 39407,
+"SAT": 978.6
+},
+{
+"County": "Childress",
+"Graduation": 90.75,
+"Income": 39140,
+"SAT": 0.0
+},
+{
+"County": "Clay",
+"Graduation": 99.325,
+"Income": 49171,
+"SAT": 971.0
+},
+{
+"County": "Cochran",
+"Graduation": 100.0,
+"Income": 39900,
+"SAT": 960.0
+},
+{
+"County": "Coke",
+"Graduation": 95.925,
+"Income": 41529,
+"SAT": 0.0
+},
+{
+"County": "Coleman",
+"Graduation": 91.06666667,
+"Income": 42258,
+"SAT": 945.0
+},
+{
+"County": "Collin",
+"Graduation": 96.80357143,
+"Income": 90382,
+"SAT": 1045.0
+},
+{
+"County": "Collingsworth",
+"Graduation": 98.9,
+"Income": 37389,
+"SAT": 915.0
+},
+{
+"County": "Colorado",
+"Graduation": 94.63333333,
+"Income": 48161,
+"SAT": 951.0
+},
+{
+"County": "Comal",
+"Graduation": 95.3,
+"Income": 76296,
+"SAT": 937.3333332999998
+},
+{
+"County": "Comanche",
+"Graduation": 97.775,
+"Income": 40052,
+"SAT": 930.3333332999998
+},
+{
+"County": "Concho",
+"Graduation": 100.0,
+"Income": 39622,
+"SAT": 1075.0
+},
+{
+"County": "Cooke",
+"Graduation": 97.7,
+"Income": 59243,
+"SAT": 998.3333332999998
+},
+{
+"County": "Coryell",
+"Graduation": 93.45,
+"Income": 50122,
+"SAT": 992.75
+},
+{
+"County": "Crane",
+"Graduation": 90.7,
+"Income": 57408,
+"SAT": 920.0
+},
+{
+"County": "Crockett",
+"Graduation": 88.2,
+"Income": 46556,
+"SAT": 865.0
+},
+{
+"County": "Crosby",
+"Graduation": 95.23333333,
+"Income": 35136,
+"SAT": 918.0
+},
+{
+"County": "Dallam",
+"Graduation": 99.325,
+"Income": 48470,
+"SAT": 1013.0
+},
+{
+"County": "Dallas",
+"Graduation": 86.79285714,
+"Income": 54429,
+"SAT": 895.5806451999999
+},
+{
+"County": "Dawson",
+"Graduation": 98.7875,
+"Income": 41073,
+"SAT": 836.0
+},
+{
+"County": "Deaf Smith",
+"Graduation": 90.65,
+"Income": 43944,
+"SAT": 1095.0
+},
+{
+"County": "Delta",
+"Graduation": 94.6,
+"Income": 41266,
+"SAT": 919.0
+},
+{
+"County": "Denton",
+"Graduation": 96.04090909,
+"Income": 80841,
+"SAT": 1039.8461539999998
+},
+{
+"County": "Dickens",
+"Graduation": 96.65,
+"Income": 38239,
+"SAT": 0.0
+},
+{
+"County": "Dimmit",
+"Graduation": 83.8,
+"Income": 38275,
+"SAT": 825.0
+},
+{
+"County": "Duval",
+"Graduation": 91.01666667,
+"Income": 34777,
+"SAT": 862.0
+},
+{
+"County": "Eastland",
+"Graduation": 95.1,
+"Income": 37789,
+"SAT": 957.0
+},
+{
+"County": "Ector",
+"Graduation": 85.8,
+"Income": 53474,
+"SAT": 909.0
+},
+{
+"County": "El Paso",
+"Graduation": 83.94615385,
+"Income": 42048,
+"SAT": 850.8461537999999
+},
+{
+"County": "Ellis",
+"Graduation": 95.29545455,
+"Income": 69448,
+"SAT": 963.1
+},
+{
+"County": "Erath",
+"Graduation": 86.5,
+"Income": 43787,
+"SAT": 930.8333332999998
+},
+{
+"County": "Falls",
+"Graduation": 88.2,
+"Income": 38559,
+"SAT": 876.3333332999998
+},
+{
+"County": "Fannin",
+"Graduation": 96.49375,
+"Income": 46347,
+"SAT": 999.2857142999999
+},
+{
+"County": "Fayette",
+"Graduation": 97.38,
+"Income": 53776,
+"SAT": 1009.0
+},
+{
+"County": "Fisher",
+"Graduation": 98.75,
+"Income": 46247,
+"SAT": 0.0
+},
+{
+"County": "Floyd",
+"Graduation": 95.675,
+"Income": 40536,
+"SAT": 845.0
+},
+{
+"County": "Foard",
+"Graduation": 100.0,
+"Income": 36056,
+"SAT": 0.0
+},
+{
+"County": "Fort Bend",
+"Graduation": 92.325,
+"Income": 90972,
+"SAT": 969.25
+},
+{
+"County": "Franklin",
+"Graduation": 99.45,
+"Income": 44202,
+"SAT": 1115.0
+},
+{
+"County": "Freestone",
+"Graduation": 95.4,
+"Income": 45681,
+"SAT": 959.0
+},
+{
+"County": "Frio",
+"Graduation": 87.6,
+"Income": 39193,
+"SAT": 884.5
+},
+{
+"County": "Gaines",
+"Graduation": 93.66666667,
+"Income": 51910,
+"SAT": 908.0
+},
+{
+"County": "Galveston",
+"Graduation": 92.14375,
+"Income": 64155,
+"SAT": 906.6
+},
+{
+"County": "Gillespie",
+"Graduation": 96.15,
+"Income": 58787,
+"SAT": 976.0
+},
+{
+"County": "Glasscock",
+"Graduation": 100.0,
+"Income": 71360,
+"SAT": 0.0
+},
+{
+"County": "Goliad",
+"Graduation": 99.0,
+"Income": 55264,
+"SAT": 935.0
+},
+{
+"County": "Gonzales",
+"Graduation": 85.05,
+"Income": 45491,
+"SAT": 879.0
+},
+{
+"County": "Gray",
+"Graduation": 98.36666667,
+"Income": 47828,
+"SAT": 941.0
+},
+{
+"County": "Grayson",
+"Graduation": 96.6125,
+"Income": 51808,
+"SAT": 1016.3636359999999
+},
+{
+"County": "Gregg",
+"Graduation": 94.13125,
+"Income": 45594,
+"SAT": 982.625
+},
+{
+"County": "Grimes",
+"Graduation": 92.275,
+"Income": 50891,
+"SAT": 964.5
+},
+{
+"County": "Guadalupe",
+"Graduation": 95.6375,
+"Income": 67683,
+"SAT": 964.75
+},
+{
+"County": "Hale",
+"Graduation": 95.24,
+"Income": 40152,
+"SAT": 1043.5
+},
+{
+"County": "Hamilton",
+"Graduation": 98.7,
+"Income": 45718,
+"SAT": 986.0
+},
+{
+"County": "Hansford",
+"Graduation": 98.55,
+"Income": 57832,
+"SAT": 1142.5
+},
+{
+"County": "Hardeman",
+"Graduation": 96.9,
+"Income": 35521,
+"SAT": 927.0
+},
+{
+"County": "Hardin",
+"Graduation": 95.74,
+"Income": 60692,
+"SAT": 948.6
+},
+{
+"County": "Harris",
+"Graduation": 90.09666667,
+"Income": 56415,
+"SAT": 896.3714286000001
+},
+{
+"County": "Harrison",
+"Graduation": 95.49,
+"Income": 47181,
+"SAT": 952.0
+},
+{
+"County": "Hartley",
+"Graduation": 94.45,
+"Income": 70121,
+"SAT": 0.0
+},
+{
+"County": "Haskell",
+"Graduation": 97.35,
+"Income": 34653,
+"SAT": 0.0
+},
+{
+"County": "Hays",
+"Graduation": 91.86,
+"Income": 64864,
+"SAT": 1019.8
+},
+{
+"County": "Hemphill",
+"Graduation": 85.2,
+"Income": 74856,
+"SAT": 1017.0
+},
+{
+"County": "Henderson",
+"Graduation": 95.5,
+"Income": 43425,
+"SAT": 960.6666667000002
+},
+{
+"County": "Hidalgo",
+"Graduation": 90.23611111,
+"Income": 35928,
+"SAT": 908.7647059000001
+},
+{
+"County": "Hill",
+"Graduation": 95.57272727,
+"Income": 47338,
+"SAT": 952.875
+},
+{
+"County": "Hockley",
+"Graduation": 93.475,
+"Income": 46856,
+"SAT": 1009.6
+},
+{
+"County": "Hood",
+"Graduation": 98.2,
+"Income": 57346,
+"SAT": 1021.666667
+},
+{
+"County": "Hopkins",
+"Graduation": 96.44285714,
+"Income": 46582,
+"SAT": 943.75
+},
+{
+"County": "Houston",
+"Graduation": 94.01,
+"Income": 34587,
+"SAT": 884.8
+},
+{
+"County": "Howard",
+"Graduation": 93.66666667,
+"Income": 51863,
+"SAT": 1026.0
+},
+{
+"County": "Hudspeth",
+"Graduation": 97.13333333,
+"Income": 35252,
+"SAT": 854.5
+},
+{
+"County": "Hunt",
+"Graduation": 95.175,
+"Income": 51827,
+"SAT": 962.7
+},
+{
+"County": "Hutchinson",
+"Graduation": 95.75,
+"Income": 53936,
+"SAT": 934.5
+},
+{
+"County": "Irion",
+"Graduation": 100.0,
+"Income": 67249,
+"SAT": 1128.0
+},
+{
+"County": "Jack",
+"Graduation": 98.31666667,
+"Income": 46975,
+"SAT": 950.6666667000002
+},
+{
+"County": "Jackson",
+"Graduation": 96.18333333,
+"Income": 53143,
+"SAT": 985.0
+},
+{
+"County": "Jasper",
+"Graduation": 97.71,
+"Income": 44909,
+"SAT": 992.4
+},
+{
+"County": "Jeff Davis",
+"Graduation": 100.0,
+"Income": 46688,
+"SAT": 892.0
+},
+{
+"County": "Jefferson",
+"Graduation": 90.99375,
+"Income": 46198,
+"SAT": 911.8888889000001
+},
+{
+"County": "Jim Wells",
+"Graduation": 88.575,
+"Income": 40056,
+"SAT": 966.6666667000002
+},
+{
+"County": "Johnson",
+"Graduation": 93.96666667,
+"Income": 59809,
+"SAT": 960.2222222000001
+},
+{
+"County": "Jones",
+"Graduation": 96.24,
+"Income": 40931,
+"SAT": 980.25
+},
+{
+"County": "Karnes",
+"Graduation": 95.475,
+"Income": 47608,
+"SAT": 911.3333332999998
+},
+{
+"County": "Kaufman",
+"Graduation": 91.53571429,
+"Income": 62363,
+"SAT": 941.5714286
+},
+{
+"County": "Kendall",
+"Graduation": 88.1,
+"Income": 83805,
+"SAT": 1010.5
+},
+{
+"County": "Kerr",
+"Graduation": 94.65,
+"Income": 50461,
+"SAT": 933.0
+},
+{
+"County": "Kimble",
+"Graduation": 98.1,
+"Income": 40118,
+"SAT": 859.0
+},
+{
+"County": "Kinney",
+"Graduation": 93.0,
+"Income": 40612,
+"SAT": 934.0
+},
+{
+"County": "Kleberg",
+"Graduation": 91.56666667,
+"Income": 44106,
+"SAT": 900.3333332999998
+},
+{
+"County": "Knox",
+"Graduation": 97.9,
+"Income": 37586,
+"SAT": 0.0
+},
+{
+"County": "La Salle",
+"Graduation": 87.6,
+"Income": 39926,
+"SAT": 836.0
+},
+{
+"County": "Lamar",
+"Graduation": 96.05,
+"Income": 41887,
+"SAT": 978.5
+},
+{
+"County": "Lamb",
+"Graduation": 97.64,
+"Income": 37846,
+"SAT": 884.0
+},
+{
+"County": "Lampasas",
+"Graduation": 98.6,
+"Income": 52637,
+"SAT": 911.5
+},
+{
+"County": "Lavaca",
+"Graduation": 96.66666667,
+"Income": 48975,
+"SAT": 999.0
+},
+{
+"County": "Lee",
+"Graduation": 97.03333333,
+"Income": 51768,
+"SAT": 985.3333332999998
+},
+{
+"County": "Leon",
+"Graduation": 97.72,
+"Income": 44891,
+"SAT": 873.4
+},
+{
+"County": "Liberty",
+"Graduation": 93.86666667,
+"Income": 48592,
+"SAT": 896.1666667000002
+},
+{
+"County": "Limestone",
+"Graduation": 92.25,
+"Income": 39382,
+"SAT": 848.0
+},
+{
+"County": "Live Oak",
+"Graduation": 91.15,
+"Income": 51953,
+"SAT": 975.5
+},
+{
+"County": "Llano",
+"Graduation": 100.0,
+"Income": 48135,
+"SAT": 1011.0
+},
+{
+"County": "Lubbock",
+"Graduation": 93.35,
+"Income": 48587,
+"SAT": 959.1
+},
+{
+"County": "Lynn",
+"Graduation": 100.0,
+"Income": 39869,
+"SAT": 901.6666667000002
+},
+{
+"County": "Madison",
+"Graduation": 83.6,
+"Income": 42429,
+"SAT": 907.0
+},
+{
+"County": "Marion",
+"Graduation": 94.3,
+"Income": 34919,
+"SAT": 0.0
+},
+{
+"County": "Martin",
+"Graduation": 97.6,
+"Income": 58760,
+"SAT": 1072.5
+},
+{
+"County": "Mason",
+"Graduation": 100.0,
+"Income": 44818,
+"SAT": 949.0
+},
+{
+"County": "Matagorda",
+"Graduation": 92.2625,
+"Income": 46324,
+"SAT": 955.25
+},
+{
+"County": "Maverick",
+"Graduation": 87.3,
+"Income": 35654,
+"SAT": 872.0
+},
+{
+"County": "McCulloch",
+"Graduation": 94.06666667,
+"Income": 40125,
+"SAT": 882.0
+},
+{
+"County": "McLennan",
+"Graduation": 95.82894737,
+"Income": 46662,
+"SAT": 973.0526315999999
+},
+{
+"County": "McMullen",
+"Graduation": 100.0,
+"Income": 67249,
+"SAT": 1016.0
+},
+{
+"County": "Medina",
+"Graduation": 91.84,
+"Income": 51304,
+"SAT": 976.8
+},
+{
+"County": "Midland",
+"Graduation": 91.475,
+"Income": 68729,
+"SAT": 976.0
+},
+{
+"County": "Milam",
+"Graduation": 94.97,
+"Income": 42302,
+"SAT": 970.2
+},
+{
+"County": "Mills",
+"Graduation": 95.7,
+"Income": 43540,
+"SAT": 1015.5
+},
+{
+"County": "Mitchell",
+"Graduation": 94.76666667,
+"Income": 41262,
+"SAT": 1040.0
+},
+{
+"County": "Montague",
+"Graduation": 97.23333333,
+"Income": 46237,
+"SAT": 995.6
+},
+{
+"County": "Montgomery",
+"Graduation": 93.1,
+"Income": 72506,
+"SAT": 990.3333332999998
+},
+{
+"County": "Moore",
+"Graduation": 97.4,
+"Income": 52344,
+"SAT": 984.5
+},
+{
+"County": "Morris",
+"Graduation": 95.875,
+"Income": 38255,
+"SAT": 910.0
+},
+{
+"County": "Motley",
+"Graduation": 100.0,
+"Income": 37464,
+"SAT": 967.0
+},
+{
+"County": "Nacogdoches",
+"Graduation": 95.0375,
+"Income": 38099,
+"SAT": 989.7142857000001
+},
+{
+"County": "Navarro",
+"Graduation": 97.72142857,
+"Income": 44111,
+"SAT": 908.5714286
+},
+{
+"County": "Newton",
+"Graduation": 92.26666667,
+"Income": 41388,
+"SAT": 945.5
+},
+{
+"County": "Nolan",
+"Graduation": 97.4875,
+"Income": 40969,
+"SAT": 1042.666667
+},
+{
+"County": "Nueces",
+"Graduation": 87.71818182,
+"Income": 53562,
+"SAT": 956.8
+},
+{
+"County": "Ochiltree",
+"Graduation": 91.1,
+"Income": 61194,
+"SAT": 865.0
+},
+{
+"County": "Oldham",
+"Graduation": 100.0,
+"Income": 54212,
+"SAT": 949.0
+},
+{
+"County": "Orange",
+"Graduation": 91.44,
+"Income": 53611,
+"SAT": 934.8
+},
+{
+"County": "Palo Pinto",
+"Graduation": 96.66,
+"Income": 43589,
+"SAT": 927.0
+},
+{
+"County": "Panola",
+"Graduation": 92.075,
+"Income": 47780,
+"SAT": 975.75
+},
+{
+"County": "Parker",
+"Graduation": 95.39375,
+"Income": 67735,
+"SAT": 992.7142857000001
+},
+{
+"County": "Parmer",
+"Graduation": 97.325,
+"Income": 48344,
+"SAT": 1080.0
+},
+{
+"County": "Pecos",
+"Graduation": 95.56666667,
+"Income": 45414,
+"SAT": 929.3333332999998
+},
+{
+"County": "Polk",
+"Graduation": 94.75833333,
+"Income": 43014,
+"SAT": 849.1666667000002
+},
+{
+"County": "Potter",
+"Graduation": 96.6125,
+"Income": 41563,
+"SAT": 972.0
+},
+{
+"County": "Presidio",
+"Graduation": 93.075,
+"Income": 32742,
+"SAT": 793.0
+},
+{
+"County": "Rains",
+"Graduation": 92.0,
+"Income": 47354,
+"SAT": 1029.0
+},
+{
+"County": "Randall",
+"Graduation": 96.85,
+"Income": 65795,
+"SAT": 1035.0
+},
+{
+"County": "Reagan",
+"Graduation": 96.45,
+"Income": 67308,
+"SAT": 1045.0
+},
+{
+"County": "Real",
+"Graduation": 68.55,
+"Income": 36744,
+"SAT": 1160.0
+},
+{
+"County": "Red River",
+"Graduation": 97.5,
+"Income": 36352,
+"SAT": 964.0
+},
+{
+"County": "Reeves",
+"Graduation": 97.875,
+"Income": 40092,
+"SAT": 887.0
+},
+{
+"County": "Refugio",
+"Graduation": 97.3,
+"Income": 45366,
+"SAT": 1001.0
+},
+{
+"County": "Robertson",
+"Graduation": 97.22,
+"Income": 42680,
+"SAT": 925.75
+},
+{
+"County": "Rockwall",
+"Graduation": 95.275,
+"Income": 97484,
+"SAT": 1000.5
+},
+{
+"County": "Runnels",
+"Graduation": 98.2,
+"Income": 40112,
+"SAT": 1014.666667
+},
+{
+"County": "Rusk",
+"Graduation": 94.06875,
+"Income": 46421,
+"SAT": 922.4
+},
+{
+"County": "Sabine",
+"Graduation": 92.75,
+"Income": 38451,
+"SAT": 917.5
+},
+{
+"County": "San Augustine",
+"Graduation": 95.1,
+"Income": 36426,
+"SAT": 895.5
+},
+{
+"County": "San Jacinto",
+"Graduation": 90.6,
+"Income": 45794,
+"SAT": 906.5
+},
+{
+"County": "San Patricio",
+"Graduation": 93.5,
+"Income": 51667,
+"SAT": 922.8571429
+},
+{
+"County": "San Saba",
+"Graduation": 95.38333333,
+"Income": 39995,
+"SAT": 984.3333332999998
+},
+{
+"County": "Schleicher",
+"Graduation": 97.7,
+"Income": 47258,
+"SAT": 915.0
+},
+{
+"County": "Scurry",
+"Graduation": 96.66666667,
+"Income": 50316,
+"SAT": 792.0
+},
+{
+"County": "Shackelford",
+"Graduation": 87.2,
+"Income": 55403,
+"SAT": 987.5
+},
+{
+"County": "Shelby",
+"Graduation": 95.51,
+"Income": 37410,
+"SAT": 847.5
+},
+{
+"County": "Smith",
+"Graduation": 93.2,
+"Income": 52520,
+"SAT": 953.375
+},
+{
+"County": "Somervell",
+"Graduation": 84.45,
+"Income": 56944,
+"SAT": 921.5
+},
+{
+"County": "Starr",
+"Graduation": 93.46666667,
+"Income": 26691,
+"SAT": 942.5
+},
+{
+"County": "Stephens",
+"Graduation": 91.35,
+"Income": 42831,
+"SAT": 946.0
+},
+{
+"County": "Sutton",
+"Graduation": 95.0,
+"Income": 54760,
+"SAT": 920.0
+},
+{
+"County": "Swisher",
+"Graduation": 92.8,
+"Income": 38790,
+"SAT": 1113.0
+},
+{
+"County": "Tarrant",
+"Graduation": 93.52368421,
+"Income": 61553,
+"SAT": 983.7391303999999
+},
+{
+"County": "Taylor",
+"Graduation": 89.725,
+"Income": 48215,
+"SAT": 1017.8
+},
+{
+"County": "Terrell",
+"Graduation": 90.0,
+"Income": 41114,
+"SAT": 0.0
+},
+{
+"County": "Terry",
+"Graduation": 96.95,
+"Income": 38910,
+"SAT": 903.6666667000002
+},
+{
+"County": "Throckmorton",
+"Graduation": 96.15,
+"Income": 42876,
+"SAT": 923.0
+},
+{
+"County": "Titus",
+"Graduation": 94.75,
+"Income": 45324,
+"SAT": 937.5
+},
+{
+"County": "Tom Green",
+"Graduation": 94.72857143,
+"Income": 48221,
+"SAT": 1009.7142859999999
+},
+{
+"County": "Travis",
+"Graduation": 88.77083333,
+"Income": 70068,
+"SAT": 1028.833333
+},
+{
+"County": "Trinity",
+"Graduation": 94.225,
+"Income": 38973,
+"SAT": 918.5
+},
+{
+"County": "Tyler",
+"Graduation": 93.89,
+"Income": 43617,
+"SAT": 958.0
+},
+{
+"County": "Upshur",
+"Graduation": 95.34285714,
+"Income": 49015,
+"SAT": 964.8333332999998
+},
+{
+"County": "Upton",
+"Graduation": 96.375,
+"Income": 56335,
+"SAT": 1055.0
+},
+{
+"County": "Uvalde",
+"Graduation": 89.225,
+"Income": 36913,
+"SAT": 936.25
+},
+{
+"County": "Val Verde",
+"Graduation": 93.05,
+"Income": 42104,
+"SAT": 1002.5
+},
+{
+"County": "Van Zandt",
+"Graduation": 91.6125,
+"Income": 49751,
+"SAT": 985.5714286
+},
+{
+"County": "Victoria",
+"Graduation": 84.45,
+"Income": 53659,
+"SAT": 903.5
+},
+{
+"County": "Walker",
+"Graduation": 64.68333333,
+"Income": 42709,
+"SAT": 932.3333332999998
+},
+{
+"County": "Waller",
+"Graduation": 94.28333333,
+"Income": 56407,
+"SAT": 838.6666667000001
+},
+{
+"County": "Ward",
+"Graduation": 98.125,
+"Income": 63809,
+"SAT": 965.0
+},
+{
+"County": "Washington",
+"Graduation": 95.475,
+"Income": 53157,
+"SAT": 987.0
+},
+{
+"County": "Webb",
+"Graduation": 87.775,
+"Income": 36718,
+"SAT": 868.0
+},
+{
+"County": "Wharton",
+"Graduation": 98.06,
+"Income": 46097,
+"SAT": 963.4
+},
+{
+"County": "Wheeler",
+"Graduation": 91.25,
+"Income": 47476,
+"SAT": 0.0
+},
+{
+"County": "Wichita",
+"Graduation": 95.92,
+"Income": 45071,
+"SAT": 929.1666667000002
+},
+{
+"County": "Wilbarger",
+"Graduation": 96.78333333,
+"Income": 40955,
+"SAT": 1039.0
+},
+{
+"County": "Willacy",
+"Graduation": 89.95,
+"Income": 31225,
+"SAT": 863.75
+},
+{
+"County": "Williamson",
+"Graduation": 96.675,
+"Income": 82370,
+"SAT": 1003.3
+},
+{
+"County": "Wilson",
+"Graduation": 96.2625,
+"Income": 66045,
+"SAT": 947.25
+},
+{
+"County": "Wise",
+"Graduation": 97.92142857,
+"Income": 57609,
+"SAT": 959.2857142999999
+},
+{
+"County": "Wood",
+"Graduation": 96.99166667,
+"Income": 47260,
+"SAT": 955.6666667000002
+},
+{
+"County": "Yoakum",
+"Graduation": 96.55,
+"Income": 57114,
+"SAT": 1029.0
+},
+{
+"County": "Young",
+"Graduation": 95.3,
+"Income": 52133,
+"SAT": 1003.0
+},
+{
+"County": "Zapata",
+"Graduation": 90.95,
+"Income": 34136,
+"SAT": 917.0
+},
+{
+"County": "Zavala",
+"Graduation": 93.7,
+"Income": 25507,
+"SAT": 798.0
+}
+]
