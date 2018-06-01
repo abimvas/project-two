@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Median Income</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+   integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+   crossorigin=""/>
+  <link rel="stylesheet" href="../static/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.3/d3.min.js"></script>  
+
+
+</head>
+<body>
+    <script>
+        function myFunction(address) {
+          window.location.href = "http://127.0.0.1:5000" + address;
+        };
+        </script>
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper" class="col-lg-10 text-center">
+        <div class="container">
+          <!-- title -->
+            <h2>Finding Correlations between Educational Factors and High School Graduation Rates In Texas </h2>
+            <div class="select">
+              <!-- drop down to choose features we would like to display -->
+            <span> CHOOSE A FEATURE: </span>
+            <select class="form-control" id="choice" onchange="myFunction(this.value)">
+                <optgroup label="Choropleth">
+                  <option value="/">Income By County</option>
+                  <option value="/">Graduation By County</option>
+                  <option value="/">SAT Scores By County</option>
+                </optgroup>
+                <optgroup label="Scatter Plots">
+                    <option value="/">SAT Scores By County</option>
+                    <option value="/income">Income By County</option>
+                    <option value="/sat_income">SAT Scores vs. Household Income</option>
+                </optgroup>
+  
+  
+                
+              </select>
+          </div>
+         
+          <!-- adding plot div -->
+            <div id="scatter-div"></div>
+           
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+<!-- loads app.js -->
+<script src="../static/income_sat.js"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
