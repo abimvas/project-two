@@ -21,7 +21,7 @@ data = [trace1];
 layout = {
   autosize: true, 
   hovermode: 'closest', 
-  title: 'Median Household Income by County', 
+  title: 'Graduation Rate by Household Income', 
   xaxis: {
     autorange: true, 
     range: [62.4367074182, 102.246625915], 
@@ -31,7 +31,7 @@ layout = {
   yaxis: {
     autorange: true, 
     range: [20131.0363117, 102859.963688], 
-    title: 'Income'
+    title: 'Household Income'
   }
 };
 Plotly.plot('scatter', {
