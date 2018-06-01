@@ -26,6 +26,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+<<<<<<< HEAD
 
 @app.route("/table")
 def table():
@@ -39,6 +40,11 @@ def income():
 def sat_income():
     return render_template("sat_income.html")
 
+=======
+@app.route("/table")
+def table():
+    return render_template("Table.html")
+>>>>>>> jasmine
 
 @app.route("/data")
 def data():
