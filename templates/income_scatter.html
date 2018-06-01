@@ -33,13 +33,14 @@
             <span> CHOOSE A FEATURE: </span>
             <select class="form-control" id="choice" onchange="myFunction(this.value)">
                 <optgroup label="Choropleth">
-                  <option value="ch_income">Income By County</option>
-                  <option value="ch_grad">Graduation By County</option>
-                  <option value="ch_sat">SAT Scores By County</option>
+                  <option value="/">Income By County</option>
+                  <option value="/">Graduation By County</option>
+                  <option value="/">SAT Scores By County</option>
                 </optgroup>
                 <optgroup label="Scatter Plots">
-                    <option value="/">Graduation By County</option>
-                    <option value="/income">Income By County</option>
+                    <option value="/">Graduation Rate by SAT Scores</option>
+                    <option value="/income">Graduation Rate by Household Income</option>
+                    <option value="/sat_income">SAT Scores vs. Household Income</option>
                 </optgroup>
   
   
@@ -56,5 +57,6 @@
 
 <!-- loads app.js -->
 <script src="../static/plot.js"></script>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 </html>
