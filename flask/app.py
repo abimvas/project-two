@@ -41,11 +41,15 @@ gh = pd.read_csv('DataSets/merged.csv')
 # save to database
 gh.to_sql('income', engine, if_exists='replace') 
 
-app = Flask(__name__)
+app = Flask(__name__, static_path='static')
 
 @app.route("/")
 def home():
     return render_template("index.html")
+
+@app.route("/table")
+def table():
+    return app.send_static_file("Table.html")
 
 @app.route("/data")
 def data():
