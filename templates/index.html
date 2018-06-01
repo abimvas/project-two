@@ -30,6 +30,14 @@
   <a class="navbar-brand" href="/table" style="color: white; background-color: rgb(53, 36, 36)">
         <span class="nav-color">Data Table</span>
       </a>
+
+
+    <script>
+        function myFunction(address) {
+          window.location.href = "http://127.0.0.1:5000" + address;
+        };
+        </script>
+  
     <!-- Page Content -->
     <div id="page-content-wrapper" class="col-lg-12 text-center">
         <div class="container">
@@ -41,12 +49,18 @@
               
               <!-- drop down to choose features we would like to display -->
             <span class="dropdown"> CHOOSE FROM DROPDOWN MENU: </span>
-            <select class="form-control" id="choice">
+            <select class="form-control" id="choice" onchange="myFunction(this.value)">
               <optgroup label="Choropleth">
-              <option value="ch_income">Income By County</option>
-              <option value="ch_grad">Graduation By County</option>
-              <option value="ch_sat">SAT Scores By County</option>
+                <option value="ch_income">Income By County</option>
+                <option value="ch_grad">Graduation By County</option>
+                <option value="ch_sat">SAT Scores By County</option>
               </optgroup>
+              <optgroup label="Scatter Plots">
+                  <option value="/">Graduation Rate by SAT Scores</option>
+                  <option value="/income">Graduation Rate by Household Income</option>
+                  <option value="/sat_income">SAT Scores vs. Household Income</option>
+              </optgroup>
+
 
               
             </select>
