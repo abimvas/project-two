@@ -109,19 +109,37 @@ info.addTo(map);
 });
 }
 
+
+$(window).on("load", function () {
+  var sel = $("#choice")
+  if (location.pathname === "/") {
+    if (location.hash) {
+      var hashToOp = location.hash.slice(1)
+      sel.val(hashToOp)
+      render_choropleth($("#choice option:selected").val());
+    } else {
+      location.hash = $("#choice option:selected").val()
+    } 
+  } else {
+    location.hash = ""
+  }
+});
+
 // drop menu
 jQuery('#choice').change( function() {
 
-   // re-render map
-   map.remove();
-   
-
-   // when choice is made from drop down
-   var value = jQuery(this).val();
-   if ( value == 'ch_income') render_choropleth("Income");
-   if ( value == 'ch_grad') render_choropleth("Graduation");
-   if ( value == 'ch_sat') render_choropleth("SAT");
-})
+  var sel = $("#choice option:selected")
+  var group = sel.closest("optgroup").attr("label");
+   if (group === "Choropleth") {
+      location.replace(`${location.origin}/#${sel.val()}`)
+   } else {
+      location.pathname = sel.val()
+   }
+});
 
 // default value 
-render_choropleth("Income");
+// render_choropleth("Income");
+
+
+
+

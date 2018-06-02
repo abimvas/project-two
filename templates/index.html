@@ -47,9 +47,9 @@
             <span class="dropdown"> CHOOSE FROM DROPDOWN MENU: </span>
             <select class="form-control" id="choice">
               <optgroup label="Choropleth">
-                <option value="ch_income">Income By County</option>
-                <option value="ch_grad">Graduation By County</option>
-                <option value="ch_sat">SAT Scores By County</option>
+                <option value="Income" selected="selected">Income By County</option>
+                <option value="Graduation">Graduation By County</option>
+                <option value="SAT">SAT Scores By County</option>
               </optgroup>
               <optgroup label="Scatter Plots">
                   <option value="/sat_gr">Graduation Rate by SAT Scores</option>
@@ -68,5 +68,13 @@
 
 <!-- loads app.js -->
 <script src="{{ url_for('static', filename='app.js') }}"></script>
+<script>
+  $(window).on("hashchange", function () {
+  if (map) {
+      map.remove();
+  }
+  render_choropleth($("#choice option:selected").val());
+});
+</script>
 </body>
 </html>

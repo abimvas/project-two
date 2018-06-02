@@ -38,3 +38,21 @@ Plotly.plot('scatter', {
   data: data,
   layout: layout
 });
+
+$(window).on("load", function () {
+  location.hash = ""
+})
+
+// drop menu
+jQuery('#choice').change( function() {
+   // re-render map
+  var sel = $("#choice option:selected")
+  var group = sel.closest("optgroup").attr("label");
+
+   if (group === "Choropleth") {
+      location.replace(`${location.origin}/#${sel.val()}`)
+   } else {
+      location.hash = ""
+      location.pathname = sel.val()
+   }
+});

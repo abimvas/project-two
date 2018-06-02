@@ -58,11 +58,7 @@ def data():
              "Income": str(i['Income']).replace("$","").replace(",",""),
              "SAT": i['SAT']
              })
-
-    
-    print( data )
-
-   
+    # print( data )
     return jsonify( data )
 
 
